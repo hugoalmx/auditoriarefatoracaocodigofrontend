@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hugo Henrique Vieira de Almeida</title>
 </head>
 <body>
+    <a href="#sobre" class="skip-link">Pular para o conteúdo</a>
     <header>
-        <h1>TREVA LAB RECORDS</h1>
-        <p><strong>Gravadora Independente & Produção Musical</strong></p>
+        <h1>TREVA LAB RECORDS</h1>  
+        <p>Gravadora Independente & Produção Musical</p>
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre Nós</a></li>
@@ -17,7 +19,7 @@
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-        <hr>
+        
     </header>
 
     <main>
@@ -27,22 +29,140 @@
         </section>
 
         <section id="portfolio">
-            <h2>Artistas em Destaque</h2>
-            <ul>
-                <li><strong>Huguin (hugoalmx):</strong> Produtor, CEO e artista principal da casa. Trazendo beats pesados e autênticos e rimas afiadas para a cena.</li>
-            </ul>
-            
-            <h3>Ouça um Beat (Amostra)</h3>
-            <p>Dê play para conhecer o nosso som:</p>
-            <audio controls>
-                <source src="seu-beat.mp3" type="audio/mpeg">
-                Seu navegador não suporta o elemento de áudio.
-            </audio>
-        </section>
+    <h2>Artistas em Destaque</h2>
+
+    <article>
+        <h3>Huguin (hugoalmx)</h3> <br>
+        <p>Produtor, CEO e artista principal da casa.</p> <br>
+        
+        <div class="video-container">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/JBt2k83fVC4" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div><br>
+
+        <details>
+            <summary>Ver Transcrição/Legenda (Acessibilidade)</summary>
+            <p><strong>[Letra/Visualizer]:</strong> Sobre a música: <br>
+                A peça musical combina elementos dos gêneros Eletrônico, Hip Hop, Funk/Soul, Clássico e Pop. Apresenta uma batida eletrônica com linhas melódicas sintetizadas que são frequentemente entrelaçadas aos padrões rítmicos. Impacto emocional: esta música possui um forte senso de energia e entusiasmo à medida que avança em direção ao seu final explosivo
+                <br> Letra: <br>
+
+we doing this for fun yeah
+
+we doing this to run yeah
+
+i put him on the trunk
+
+while smoking on a blunt 
+
+
+
+we doing this for fun yeah
+
+we doing this to run yeah
+
+i put him on the trunk
+
+while smoking on a blunt
+
+
+
+we doing this for fun yeah
+
+we doing this to run yeah
+
+i put him on the trunk
+
+while smoking on a blunt 
+
+
+
+sleeping on my couch
+
+i feel like im dead
+
+thinking about the things 
+
+thats in my head
+
+nightmare after nightmare
+
+enemies under my bed
+
+
+cant dream with all this fent
+
+spam e-mails in my head
+
+trigger finger got it better 
+
+for you
+
+for you
+
+trigger finger got it bad
+
+for you
+
+for you
+
+girl, why you crying ?
+
+thats so sad 
+
+for you
+
+for you
+
+i dont need ever your help
+
+not to
+
+not to 
+
+only if i never loved  myself
+
+i dont
+
+i dont
+
+i dont need ever your help
+
+not to 
+
+not to 
+
+we doing this for fun yeah
+
+we doing this to run yeah
+
+i put him on the trunk
+
+while smoking on a blunt 
+
+we doing this for fun yeah
+
+we doing this to run yeah
+
+i put him on the trunk
+
+while smoking on a blunt
+</p>
+        </details>
+    </article>
+
+    <article>
+        <h3>Amostra de Beat (Mídia Nativa)</h3>
+        <audio controls poster="capa-beat.jpg" width="100%">
+            <source src="beat novo março.mp3" type="audio/mp4">
+            <p>Seu navegador não suporta o player nativo. 
+               <a href="beat novo março.mp3">Baixe o beat aqui</a>.
+            </p>
+        </audio>
+    </article>
+</section>
 
         <section id="redes">
             <h2>Nossas Redes e Lançamentos</h2>
-            <p>Acompanhe nossos trabalhos mais recentes, instrumentais e bastidores da gravadora através dos links abaixo:</p>
+            <p>Acompanhe nossos trabalhos mais recentes, instrumentais e bastidores da gravadora através dos links abaixo:</p><br>
             <ul>
                 <li><a href="https://soundcloud.com/hugoalmx" target="_blank" rel="noopener noreferrer">Escute no SoundCloud</a></li>
                 <li><a href="https://youtube.com/@trevalabrecords" target="_blank" rel="noopener noreferrer">Assista no YouTube</a></li>
@@ -51,16 +171,25 @@
         </section>
 
         <section id="contato">
-            <h2>Mande sua Proposta</h2>
+            <h2>Mande sua Proposta</h2><br>
+
+            <div class="form-group">
             <form action="mailto:contato@trevalabrecords.com" method="post" enctype="text/plain">
+
                 <label for="nome">Nome / Artista:</label><br>
                 <input type="text" id="nome" name="nome" required><br><br>
-                
+
+                <label for="email">E-mail </label><br>
+                <input type="email" id="email" name="email" required title="Insira um e-mail válido"><br><br>
+                <label for="forca-email">Progresso do formulário:</label>
+                <meter id="forca-email" min="0" max="100" low="30" high="70" optimum="100" value="45"></meter> <br><br>
+                                
                 <label for="mensagem">Ideia ou Proposta:</label><br>
                 <textarea id="mensagem" name="mensagem" rows="4" cols="40" required></textarea><br><br>
                 
                 <input type="submit" value="Enviar E-mail">
             </form>
+            </div>
         </section>
     </main> 
 
@@ -68,6 +197,28 @@
 
     <footer>
         <p>&copy; 2026 TREVA LAB RECORDS. Todos os direitos reservados.</p>
-    </footer>      
+    </footer>   
+    
+    <script>
+    const form = document.querySelector('form');
+    const meter = document.getElementById('forca-email');
+    const inputs = form.querySelectorAll('input[required], textarea[required]');
+
+    form.addEventListener('input', () => {
+        let preenchidos = 0;
+        
+        inputs.forEach(input => {
+            // Verifica se o campo não está vazio
+            if (input.value.trim() !== '') {
+                preenchidos++;
+            }
+        });
+
+        // Calcula a porcentagem (ex: 3 campos = 33% cada)
+        const progresso = (preenchidos / inputs.length) * 100;
+        meter.value = progresso;
+    });
+</script>
+
 </body>
 </html>
